@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.app {
+  background: radial-gradient(ellipse at top left, #9052ae 20%, transparent 20%),
+    radial-gradient(ellipse at bottom right, #9052ae 20%, transparent 20%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-wrapper {
+  background-color: rgb(230, 236, 238);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-input-wrapper {
+  position: relative;
+  max-width: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.add-btn {
+  background-color: #9052ae;
   color: white;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.add-btn:hover {
+  background-color: #9052ae90;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.initial {
+  width: 30px;
+  height: 30px;
+  background-color: #9052ae;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.editbox-letter {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: #9052ae;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.custom-modal-header,
+.editbox-header {
+  border-bottom: none !important;
+  color: white;
+  font-weight: bold;
+  background-color: #9052ae;
+}
+.loader {
+  font-size: 100px;
 }
